@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MochieTiers – Leaderboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/icons/logo.svg" />
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="status-bar">
+    <div class="brand">
+      <img src="assets/icons/logo.svg" alt="MC" />
+      <span class="brand-text">MCTIERS</span>
+    </div>
+    <div class="search-wrap">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 0 0 1.57-4.23 6.5 6.5 0 1 0-6.5 6.5 6.471 6.471 0 0 0 4.23-1.57l.27.28v.79l5 5 1.5-1.5-5-5zM10.5 15c-2.48 0-4.5-2.02-4.5-4.5S8.02 6 10.5 6 15 8.02 15 10.5 12.98 15 10.5 15z"/></svg>
+      <input id="search" type="text" placeholder="Search player" />
+    </div>
+    <button class="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="overall">
+      <img src="assets/icons/trophy.svg" alt="" /> Overall
+    </button>
+    <button class="tab" data-tab="ltms">
+      <img src="assets/icons/swords.svg" alt="" /> LTMs
+    </button>
+    <button class="tab" data-tab="vanilla">
+      <img src="assets/icons/hex.svg" alt="" /> Vanilla
+    </button>
+  </div>
+
+  <!-- Info row -->
+  <div class="info-row">
+    <button class="chip">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M11 9h2v6h-2zm0-4h2v2h-2z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 
+        10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 
+        8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+      Information
+    </button>
+    <span class="badge red">PVP<br/>CLUB</span>
+    <div class="server-ip">
+      <span class="ip">mcpvp.club</span>
+      <button id="copyIp" class="copy">Copy</button>
+    </div>
+    <a class="discord" href="#" aria-label="Discord">
+      <img src="assets/icons/discord.svg" alt="discord"/>
+    </a>
+  </div>
+
+  <!-- Leaderboard -->
+  <main id="list" class="leaderboard"></main>
+
+  <template id="card-tpl">
+    <article class="card">
+      <div class="rank">#<span class="rank-number">1</span></div>
+      <div class="avatar"></div>
+      <div class="content">
+        <div class="row1">
+          <h3 class="name">PlayerName</h3>
+          <span class="region">NA</span>
+        </div>
+        <div class="subtitle">
+          <img src="assets/icons/crown.svg" alt="" />
+          <span>Combat...</span>
+        </div>
+        <div class="tiers"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
