@@ -1,0 +1,108 @@
+{
+  "players": [
+    {
+      "rank": 1,
+      "name": "MarloMC",
+      "region": "NA",
+      "avatar": "assets/icons/skin1.png",
+      "tiers": [
+        {
+          "icon": "pearl",
+          "level": "HT1"
+        },
+        {
+          "icon": "axe",
+          "level": "HT1"
+        },
+        {
+          "icon": "pick",
+          "level": "LT1"
+        },
+        {
+          "icon": "sword",
+          "level": "LT1"
+        },
+        {
+          "icon": "heart",
+          "level": "LT1"
+        },
+        {
+          "icon": "helmet",
+          "level": "LT1"
+        },
+        {
+          "icon": "potion",
+          "level": "LT1"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "ItzReaL",
+      "region": "NA",
+      "avatar": "assets/icons/skin2.png",
+      "tiers": [
+        {
+          "icon": "pearl",
+          "level": "HT2"
+        },
+        {
+          "icon": "axe",
+          "level": "HT2"
+        },
+        {
+          "icon": "sword",
+          "level": "LT2"
+        },
+        {
+          "icon": "heart",
+          "level": "LT2"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Shiro",
+      "region": "EU",
+      "avatar": "assets/icons/skin3.png",
+      "tiers": [
+        {
+          "icon": "pearl",
+          "level": "HT1"
+        },
+        {
+          "icon": "sword",
+          "level": "LT1"
+        },
+        {
+          "icon": "heart",
+          "level": "LT1"
+        },
+        {
+          "icon": "potion",
+          "level": "LT2"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "xVoid",
+      "region": "AS",
+      "avatar": "assets/icons/skin4.png",
+      "tiers": [
+        {
+          "icon": "axe",
+          "level": "HT3"
+        },
+        {
+          "icon": "pick",
+          "level": "LT1"
+        },
+        {
+          "icon": "helmet",
+          "level": "LT2"
+        }
+      ]
+    }
+  ]
+}
